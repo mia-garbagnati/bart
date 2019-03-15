@@ -1,0 +1,71 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Bart Simpson in CSS</title>
+        <link rel="stylesheet" type="text/css" href="styles.css">
+    </head>
+    <body>
+        <div id="canvas">
+            <!-- Basic Head Shape -->
+            <div id="head" class="absolute border-right border-left yellow rotate-minus-seven"></div>
+            <div id="head-left" class="absolute border white border-radius-50"></div>
+            <div id="negative-space-top" class="absolute rotate-minus-seven white"></div>
+            <div id="negative-space-bottom" class="absolute white"></div>
+            
+            <!-- Hair -->
+            <div class="triangle triangle-outline absolute rotate-minus-seven" id="hair-1"></div>
+            <div class="triangle triangle-fill absolute rotate-minus-seven" id="hair-1-negative-space"></div>
+            <div class="triangle triangle-outline absolute rotate-minus-seven" id="hair-2"></div>
+            <div class="triangle triangle-fill absolute rotate-minus-seven" id="hair-2-negative-space"></div>
+            <div class="triangle triangle-outline absolute rotate-minus-seven" id="hair-3"></div>
+            <div class="triangle triangle-fill absolute rotate-minus-seven" id="hair-3-negative-space"></div>
+            <div class="triangle triangle-outline absolute rotate-minus-seven" id="hair-4"></div>
+            <div class="triangle triangle-fill absolute rotate-minus-seven" id="hair-4-negative-space"></div>
+            <div class="triangle triangle-outline absolute rotate-minus-seven" id="hair-5"></div>
+            <div class="triangle triangle-fill absolute rotate-minus-seven" id="hair-5-negative-space"></div>
+            <div class="triangle triangle-outline absolute rotate-minus-seven" id="hair-6"></div>
+            <div class="triangle triangle-fill absolute rotate-minus-seven" id="hair-6-negative-space"></div>
+            <div class="triangle triangle-outline absolute rotate-minus-seven" id="hair-7"></div>
+            <div class="triangle triangle-fill absolute rotate-minus-seven" id="hair-7-negative-space"></div>
+            
+            <!-- Eyes -->
+            <div class="eye absolute border white border-radius-50" id="right-eye">
+                <div class="eyelid eyelid-top absolute yellow border-bottom"></div>
+                <div class="pupil absolute white border-radius-50"></div>
+                <div class="eyelid eyelid-bottom absolute yellow border-top"></div>
+            </div>
+            <div class="eye absolute border white border-radius-50" id="left-eye">
+                <div class="eyelid eyelid-top absolute yellow border-bottom"></div>
+                <div class="pupil absolute white border-radius-50"></div>
+                <div class="eyelid eyelid-bottom absolute yellow border-top"></div>
+            </div>
+            <div id="eyebrow" class="absolute border border-radius-50 yellow"></div>
+            <div id="hide-extra-eyebrow" class="absolute rotate-minus-seven yellow"></div>
+            
+            <!-- Nose -->
+            <div id="nose" class="absolute border yellow"></div>
+            <div id="hide-extra-nose" class="absolute yellow"></div>
+            
+            <!-- Ear -->
+            <div id="main-ear-shape" class="absolute border border-radius-50 yellow"></div>
+            <div id="hide-main-ear" class="absolute border-radius-50 yellow"></div>
+            <div id="inner-ear-horizontal" class="absolute border border-radius-50"></div>
+            <div id="hide-horizontal-1" class="absolute yellow"></div>
+            <div id="hide-horizontal-2" class="absolute yellow"></div>
+            <div id="inner-ear-vertical" class="absolute border-left"></div>
+            
+            <!-- Mouth, Neck -->
+            <div id="mouth-bottom" class="absolute border-bottom border-radius-50 yellow"></div>
+            <div id="mouth-right" class="absolute border-right border-radius-50"></div>
+            <div id="mouth-right-hide" class="absolute rotate-minus-seven yellow"></div>
+            <div id="mouth-left" class="absolute border-left"></div>
+            
+            <!-- Chin -->
+            <div id="chin" class="absolute border border-radius-50 yellow"></div>
+            <div id="hide-chin-line" class="absolute rotate-minus-seven yellow"></div>
+            
+            <!-- Neck -->
+            <div id="neck" class="absolute border-right yellow"></div>
+        </div>
+    </body>
+</html>

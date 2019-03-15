@@ -1,0 +1,357 @@
+* {
+/*    border: 1px solid red;*/
+}
+
+#canvas {
+    position: relative;
+    width: 400px;
+    height: 400px;
+    margin: 50px auto;
+    border: 1px solid black;
+    overflow: hidden;
+}
+
+.absolute { position: absolute; }
+
+.border { border: 2px solid #000; }
+.border-top { border-top: 2px solid #000; }
+.border-right { border-right: 2px solid #000; }
+.border-bottom { border-bottom: 2px solid #000; }
+.border-left { border-left: 2px solid #000; }
+.border-radius-50 { border-radius: 50%; }
+
+.rotate-minus-seven { transform: rotate(-7deg); }
+
+.yellow { background-color: #F6D749; }
+
+.white { background-color: #fff; }
+
+/* Basic Head Shape */
+#head {
+    top: 30%;
+    left: 25%;
+    width: 30%;
+    height: 40%;
+}
+
+#head-left {
+    top: 0%;
+    left: -11%;
+    width: 40%;
+    height: 150%;
+}
+
+#negative-space-top {
+    top: -5.5%;
+    width: 100%;
+    height: 34%;
+}
+
+#negative-space-bottom {
+    bottom: -8%;
+    width: 100%;
+    height: 30%;
+}
+
+/* Hair */
+.triangle, .triangle:before, .triangle:after {
+    box-sizing: border-box;
+}
+
+.triangle-outline {
+    z-index: 1;
+    width: 10px;
+    height: 7px;
+    border-top: solid 10px #000;
+    border-right: solid 10px transparent;
+    border-left: solid 10px transparent;
+}
+
+.triangle-fill {
+    z-index: 2;
+    width: 8px;
+    height: 10px;
+    border-top: solid 8px #fff;
+    border-right: solid 8px transparent;
+    border-left: solid 8px transparent;
+}
+
+#hair-1 {
+    top: 125px;
+    left: 103px;
+}
+
+#hair-1-negative-space {
+    top: 124px;
+    left: 105px;
+}
+
+#hair-2 {
+    top: 123px;
+    left: 118px;
+}
+
+#hair-2-negative-space {
+    top: 122px;
+    left: 120px;
+}
+
+#hair-3 {
+    top: 121px;
+    left: 133px;
+}
+
+#hair-3-negative-space {
+    top: 120px;
+    left: 135px;
+}
+
+#hair-4 {
+    top: 119px;
+    left: 148px;
+}
+
+#hair-4-negative-space {
+    top: 118px;
+    left: 150px;
+}
+
+#hair-5 {
+    top: 117px;
+    left: 162px;
+}
+
+#hair-5-negative-space {
+    top: 116px;
+    left: 164px;
+}
+
+#hair-6 {
+    top: 115px;
+    left: 177px;
+}
+
+#hair-6-negative-space {
+    top: 114px;
+    left: 179px;
+}
+
+#hair-7 {
+    top: 114px;
+    left: 193px;
+}
+
+#hair-7-negative-space {
+    top: 113px;
+    left: 195px;
+}
+
+/* Eyes */
+.eye {
+    width: 50px;
+    height: 50px;
+    overflow: hidden;
+}
+
+#right-eye {
+    top: 180px;
+    left: 185px;
+    z-index: 2;
+}
+
+#left-eye {
+    top: 188px;
+    left: 140px;
+    z-index: 5;
+}
+
+.pupil {
+    top: 0;
+    bottom: 0;
+    left: 18px;
+    height: 5px;
+    width: 5px;
+    margin-top: auto;
+    margin-bottom: auto;
+    background-color: #000;
+}
+
+.eyelid {
+    z-index: 1;
+    width: 50px;
+    height: 24px;
+}
+
+.eyelid-top {
+    top: -26px;
+    animation-name: upper-blink;
+    animation-delay: 4s; 
+    animation-duration: 10s;
+    animation-iteration-count: infinite; 
+}
+
+.eyelid-bottom {
+    bottom: -26px;;
+    animation-name: lower-blink;
+    animation-delay: 4s; 
+    animation-duration: 10s;
+    animation-iteration-count: infinite; 
+}
+
+#eyebrow {
+    top: 175px;
+    left: 208px;
+    width: 20px;
+    height: 20px;
+}
+
+#hide-extra-eyebrow {
+    top: 172px;
+    left: 170px;
+    width: 50px;
+    height: 20px;
+}
+
+/* Nose */
+#nose {
+    top: 220px;
+    left: 185px;
+    z-index: 3;
+    width: 45px;
+    height: 25px;
+    border-radius: 40%;
+}
+
+#hide-extra-nose {
+    top: 232px;
+    left: 184px;
+    z-index: 4;
+    width: 27px;
+    height: 25px;
+}
+
+/* Ear */
+#main-ear-shape {
+    top: 235px;
+    left: 110px;
+    z-index: 1;
+    width: 20px;
+    height: 20px;
+}
+
+#hide-main-ear {
+    top: 239px;
+    left: 123px;
+    z-index: 2;
+    width: 15px;
+    height: 15px;
+}
+
+#inner-ear-horizontal {
+    top: 241px;
+    left: 115px;
+    z-index: 3;
+    width: 10px;
+    height: 10px;
+}
+
+#hide-horizontal-1 {
+    top: 246px;
+    left: 115px;
+    z-index: 4;
+    width: 14px;
+    height: 8px;
+}
+
+#hide-horizontal-2 {
+    top: 253px;
+    left: 118px;
+    z-index: 4;
+    width: 8px;
+    height: 2px;
+}
+
+#inner-ear-vertical {
+    top: 241px;
+    left: 120px;
+    z-index: 5;
+    width: 10px;
+    height: 10px;
+    border-radius: 45%;
+}
+
+/* Mouth, Chin, Neck */
+#mouth-bottom {
+    top: 264px;
+    left: 154px;
+    z-index: 1;
+    width: 80px;
+    height: 20px;
+}
+
+#mouth-right {
+    top: 269px;
+    left: 216px;
+    z-index: 0;
+    width: 17px; 
+    height: 12px;
+}
+
+#mouth-right-hide {
+    top: 267px;
+    left: 226px;
+    width: 5px;
+    height: 5px;
+}
+
+#mouth-left {
+    top: 273px;
+    left: 153px;
+    width: 10px;
+    height: 10px;
+    border-radius: 35%;
+    transform: rotate(7deg);
+}
+
+/* Chin */
+#chin {
+    top: 277px;
+    left: 162px;
+    z-index: -1;
+    width: 25px;
+    height: 15px;
+    transform: rotate(-10deg);
+}
+
+#hide-chin-line {
+    top: 282px;
+    left: 160px;
+    z-index: 0;
+    width: 15px;
+    height: 13px;
+}
+
+/* Neck */
+#neck {
+    top: 278px;
+    left: 117px;
+    z-index: -1;
+    width: 55px;
+    height: 35px;
+    transform: rotate(2deg);
+}
+
+/* Blinking Animation */
+@keyframes upper-blink {
+    0% { top: -26px; }
+    2.5% { top: 0px; }
+    5% { top: -26px; }
+    100% { top: -26px; }
+}
+
+@keyframes lower-blink {
+    0% { bottom: -26px; }
+    2.5% { bottom: 0px; }
+    5% { bottom: -26px; }
+    100% { bottom: -26px; }
+}
